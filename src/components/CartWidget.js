@@ -2,7 +2,7 @@ import React from 'react';
 import { BsCart4 } from 'react-icons/bs';
 
 const CarritoWidget = () => {
-  const cartItemCount = 0; // Número hardcodeado
+  const cartItemCount = 0;
 
   return (
     <div className="cart-widget">

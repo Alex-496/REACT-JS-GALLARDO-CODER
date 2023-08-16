@@ -1,5 +1,5 @@
 import React from 'react';
-import './ItemListContainer.css'; // Asegúrate de tener el archivo de estilos
+import './ItemListContainer.css';
 
 const ItemListContainer = ({ greeting }) => {
   return (

@@ -7,9 +7,9 @@ import Historia from './paginas/Historia';
 import Contacto from './paginas/Contacto';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home'); // Estado para controlar la página actual
+  const [currentPage, setCurrentPage] = useState('home');
 
-  let pageContent; // Variable para almacenar el contenido de la página actual
+  let pageContent;
 
   switch (currentPage) {
     case 'Destiny':
