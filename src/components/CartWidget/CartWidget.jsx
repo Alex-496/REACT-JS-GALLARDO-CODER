@@ -1,7 +1,8 @@
 import React from 'react';
+import './CartWidget.css';
 import { BsCart4 } from 'react-icons/bs';
 
-const CarritoWidget = () => {
+const CartWidget = () => {
   const cartItemCount = 0;
 
   return (
@@ -12,4 +13,4 @@ const CarritoWidget = () => {
   );
 };
 
-export default CarritoWidget;
+export default CartWidget;
