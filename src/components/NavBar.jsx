@@ -1,7 +1,15 @@
-import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget/CartWidget';
+import React from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import CartWidget from './CartWidget/index';
 
 const Navbar = () => {
+
+  const navigate = useNavigate(); 
+
+  const handleCartClick = () => {
+    navigate("/checkout");
+  }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -22,9 +30,9 @@ const Navbar = () => {
             </li>
           </ul>
           <span className="navbar-text">
-            <Link to="/" className="nav-link">
+            <button className="nav-link" onClick={handleCartClick}>
               <CartWidget />
-            </Link>
+            </button>
           </span>
         </div>
       </div>
@@ -33,4 +41,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
