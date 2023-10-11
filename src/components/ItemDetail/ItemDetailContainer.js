@@ -10,7 +10,7 @@ function ItemDetailContainer() {
   );
 
   const [quantity, setQuantity] = useState(1);
-  const { addItem } = useCart(); // Obtén la función addItem del contexto
+  const { addItem } = useCart();
 
   const handleIncrement = () => {
     setQuantity(quantity + 1);
@@ -25,7 +25,6 @@ function ItemDetailContainer() {
   const handleAddToCart = () => {
     // Llama a la función addItem para agregar el producto al carrito
     addItem(selectedProduct, quantity);
-    // Opcional: Mostrar un mensaje de confirmación o redirigir a la página del carrito
   };
 
   if (!selectedProduct) {
